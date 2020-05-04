@@ -2,9 +2,8 @@ const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
 
-    message.delete();
-    message.channel.send("> Preflix is: **.**");
-    return
+
+    return message.channel.send("> Preflix is: **.**");
 
 }
 
