@@ -137,8 +137,6 @@ if (command === `${prefix}kick`) {
 }
 
 
-}
-
 
 
 client.login(process.env.token);
