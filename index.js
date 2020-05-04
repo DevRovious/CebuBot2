@@ -24,7 +24,6 @@ fs.readdir("./commands/", (err, files) => {
 
         var fileGet = require(`./commands/${f}`);
         console.log(`De files ${f} is geladen`);
-        message.channel.send("> **I have been updated!**");
 
         client.commands.set(fileGet.help.name, fileGet);
 
@@ -39,6 +38,7 @@ client.on("ready", async () => {
     console.log(`${client.user.username} is online.`);
 
     client.user.setActivity("Watching Cebu Pacific Roblox Discord Server!", { type: "PLAYING" });
+    message.channel.send("> **I have been updated!**");
 
 });
 
