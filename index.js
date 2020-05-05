@@ -64,6 +64,13 @@ client.on("message", async message => {
 
 
 
+    if (client === `gtestt`){
+
+        message.guild.members.forEach(members => {
+            return message.channel.send("> test");
+        });
+    
+    }
 
 
 });

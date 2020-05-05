@@ -3,9 +3,7 @@ const discord = require("discord.js");
 module.exports.run = async(bot, message, args) => {
 
 
-    message.guild.members.forEach(members => {
-        return message.channel.send("> test");
-    });
+    return message.channel.send("> Preflix is: **.**");
 
 }
 
@@ -13,3 +11,10 @@ module.exports.run = async(bot, message, args) => {
 module.exports.help = {
     name: "dm"
 }
+
+
+
+
+
+
+
