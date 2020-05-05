@@ -4,7 +4,7 @@ module.exports.run = async(bot, message, args) => {
 
     message.delete();
     message.channel.send("> **This funtion is under development!**"){
-        .then(msg => msg.delete(), 333000);
+        then(msg => msg.delete(), 333000);
     };
     
     return;
