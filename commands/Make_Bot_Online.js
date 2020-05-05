@@ -1,10 +1,7 @@
-const discord = require("discord.js");
 
-module.exports.run = async(bot, message, args) => {
+module.exports.run = async(bot, message) => {
 
     console.log(`${client.user.username} is online.`);
-    const newLocal = message.channel.send("Bot is online");
-    message.channel.send("Bot is online")
 }
 
 
