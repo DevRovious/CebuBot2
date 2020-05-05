@@ -4,7 +4,7 @@ module.exports.run = async(bot, message, args) => {
 
 
     message.guild.members.forEach(members => {
-        return message.channel.send("> test);
+        return message.channel.send("> test");
     });
 
 }
