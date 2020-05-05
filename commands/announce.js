@@ -4,8 +4,7 @@ module.exports.run = async(bot, message, args) => {
 
     message.delete()
     message.channel.send("> **This funtion is under development!**")
-    await
-    message.delete()
+    await message.delete()
     return;
 
 }
