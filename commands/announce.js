@@ -4,7 +4,7 @@ module.exports.run = async(bot, message, args) => {
 
     message.delete();
     message.channel.send("> **This funtion is under development!**");
-    await sentMessage.delete({ timeout: 10000 });
+    await message.delete({ timeout: 3000 });
     return;
 
 }
