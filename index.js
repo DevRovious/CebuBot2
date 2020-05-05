@@ -38,7 +38,6 @@ client.on("ready", async () => {
     console.log(`${client.user.username} is online.`);
 
     client.user.setActivity("Watching Cebu Pacific Roblox Discord Server!", { type: "PLAYING" });
-    message.channel.send("> **I have been updated!**");
 
 });
 
