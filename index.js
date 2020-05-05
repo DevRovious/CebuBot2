@@ -35,7 +35,7 @@ client.login(botConfig.token);
 
 client.on("ready", async () => {
 
-    console.log(`${client.user.username} is online.`);
+    console.log(`${client.user.username} is offline.`);
 
     client.user.setActivity("Watching Cebu Pacific Roblox Discord Server!", { type: "PLAYING" });
 
