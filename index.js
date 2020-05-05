@@ -62,14 +62,6 @@ client.on("message", async message => {
 
 
 
-
-
-    if (command === `${prefix} test`){
-
-        return message.channel.send("dd")
-    }
-
-
 });
 
 client.login(process.env.token);
