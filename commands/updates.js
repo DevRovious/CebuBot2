@@ -6,7 +6,7 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`.updates`)
+        .setTitle(`You used the command: .updates`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
         .setDescription(`**Latest update:** \n\n Date: \n *6-5-2020* \n\n > Subject: \n *Embleds added* \n\n **Version:** \n 1.0.0.1`);

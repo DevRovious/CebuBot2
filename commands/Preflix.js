@@ -6,7 +6,7 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`.preflix`)
+        .setTitle(`You used the command: .preflix`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
         .setDescription(`Preflix is: **.**`);
