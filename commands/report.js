@@ -9,9 +9,9 @@ module.exports.run = async(bot, message, args) => {
         .setTitle(`You used the command: .report`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
-        .setDescription(`**This funtion is under development!**`);
+        .setDescription(`**Please use .report {@Username} {Reason}!`);
         
- 
+        message.channel.send("This is currently in development!")
     // Send the embed to the current channel
     var embedSend = await message.channel.send(announceEmbed);
     return;
