@@ -7,7 +7,7 @@ module.exports.run = async(bot, message, args) => {
 
     if (!args[0]) return message.channel.send(`Please use .report like this: .report {@UserTag} {reason}.`)
 
-    var user = message.guild.channels.cache.find(message.mentions.users.first());
+    var user = message.guild.member(message.mentions.users.first());
 
     if (!user) return message.channel.send("Speler is niet te vinden / geef een speler op.");
 
