@@ -13,7 +13,7 @@ module.exports.run = async(bot, message, args) => {
         .setColor("00ff26")
         .setTimestamp()
         .setDescription("Flight *Number*");
-        addField(" Time: *time*")
+        .addField(" Time: *time*")
         
  
     // Send the embed to the current channel
