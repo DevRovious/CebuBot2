@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args) => {
 
 
     message.delete();
-    var boticon = bot.user.displayAvaterURL
+    var boticon = client.user.displayAvaterURL
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
