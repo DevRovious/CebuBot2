@@ -7,7 +7,7 @@ module.exports.run = async(bot, message, args) => {
 
     if (!args[0]) return message.channel.send(`Please use .report like this: .report {@UserTag} {reason}.`)
 
-    var user = message.guild.member(message.mentions.users.first());
+    var user = message.cache.member(message.mentions.users.first());
 
     if (!user) return message.channel.send("Speler is niet te vinden / geef een speler op.");
 
@@ -23,7 +23,7 @@ module.exports.run = async(bot, message, args) => {
         .addField("Reason", reason)
         .setFooter(message.createdAt);
 
-    var channelReport = message.guild.channels.find("name", "report");
+    var channelReport = message.cache.channels.find("name", "report");
     if (!channelReport) return message.channel.send("Can't find channel");
 
     // ZORG VOOR ADMINISTRATOR RECHTEN OP BOT.
