@@ -3,12 +3,12 @@ const discord = require("discord.js");
 module.exports.run = async(bot, message, args) => {
 
     message.delete();
-    return message.channel.send("> **Test**");
+    return message.channel.send("> **https://twitter.com/rbxcebupacific/status/1257961677804322816**");
     
 
 }
 
 
 module.exports.help = {
-    name: "iuhi4uehHoihsefn23984sejn##@"
+    name: "test"
 }
