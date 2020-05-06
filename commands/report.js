@@ -13,6 +13,8 @@ module.exports.run = async(bot, message, args) => {
 
     // {prefix}report speler reden
 
+    var prefix = botConfig.prefix;
+
     if (!args[0]) return message.channel.send(announceEmbed)
 
     var user = message.guild.member(message.mentions.users.first());
