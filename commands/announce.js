@@ -12,8 +12,7 @@ module.exports.run = async(bot, message, args) => {
         .setFooter(`Sendend by ${message.author.tag}`)
         .setColor("00ff26")
         .setTimestamp()
-        .setDescription("Flight *Number*");
-        .addField(" Time: *time*")
+        .setDescription(`Flight *Number* \n \n Host: ${message.user.tag} \n \n Time: *time*`);
         
  
     // Send the embed to the current channel
