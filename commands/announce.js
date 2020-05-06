@@ -14,8 +14,6 @@ module.exports.run = async(bot, message, args) => {
     .setThumbnail(icon)
     .addField("From * to *")
     .addField("Time *");
-
-
     return message.channel.send(serverEmbed)
     
     return;
