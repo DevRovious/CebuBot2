@@ -5,16 +5,15 @@ module.exports.run = async(client, message, args) => {
 
 
     message.delete();
-    var boticon = client.user.displayAvaterURL
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
         .setTitle(`📢  ${message.guild.name} | **Flight Announcement:**  📢`)
         .setFooter(`Sendend by ${message.author.tag}`)
-        .setThumbnail(boticon)
+        //.setThumbnail(boticon)
         .setColor("00ff26")
         .setTimestamp()
-        .setDescription(`**Flight: ** *number* \n **Plane: **  *planetype* \n **Host:** *${message.author.tag}* \n \n **Times:** \n *Serveropentime* \n *serverclosetime* \n *boardingtime* \n \n **Link: ** \n *link*`);
+        .setDescription(`**Flight: ** *number* \n **Plane: **  *planetype* \n **Host:** *${message.author.tag}* \n \n **Times:** \n *Serveropentime* \n *serverclosetime* \n *boardingtime* \n \n **Link: ** \n *link* \n \n **Ping:** @DevRovious`);
         
  
     // Send the embed to the current channel
