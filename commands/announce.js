@@ -5,10 +5,11 @@ module.exports.run = async(bot, message, args) => {
 
 
     message.delete();
+    var boticon = bot.user.displayAvaterURL
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`📢  ${message.guild.name} | **Flight Announcement**  📢`)
+        .setTitle(`📢  ${message.guild.name} | **Flight Announcement:**  📢`)
         .setFooter(`Sendend by ${message.author.tag}`)
         .setThumbnail(boticon)
         .setColor("00ff26")
