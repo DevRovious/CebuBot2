@@ -7,7 +7,7 @@ module.exports.run = async(bot, message, args) => {
 
     if (!args[0]) return message.channel.send(`Please use .report like this: .report {@UserTag} {reason}.`)
 
-    var user = message.cache(message.mentions.users.first());
+    var user = message.guild.member(message.mentions.users.cache.first());
 
     if (!user) return message.channel.send("Speler is niet te vinden / geef een speler op.");
 
@@ -15,7 +15,7 @@ module.exports.run = async(bot, message, args) => {
 
     if (!reason) return message.channel.send("Gelieve een reden op te geven.")
 
-    var reportEmbed = new discord.MessageEmbed()
+    var reportEmbed = new discord.RichEmbed()
         .setDescription("Reports")
         .setColor("00ff26")
         .addField("Reported user", `${user} with ID ${user.id}`)
@@ -23,7 +23,7 @@ module.exports.run = async(bot, message, args) => {
         .addField("Reason", reason)
         .setFooter(message.createdAt);
 
-    var channelReport = message.cache.channels.find("name", "report");
+    var channelReport = message.guild.channels.find("name", "report");
     if (!channelReport) return message.channel.send("Can't find channel");
 
     // ZORG VOOR ADMINISTRATOR RECHTEN OP BOT.
