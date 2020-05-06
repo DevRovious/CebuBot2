@@ -4,26 +4,16 @@ module.exports.run = async(bot, message, args) => {
 
 
 
-    var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`You used the command: .report`)
-        .setColor("00ff26")
-        .setDescription(`**Please use .report {@Username} {Reason}!`);
 
-
-
-    // {prefix}report speler reden
-
-    var prefix = botConfig.prefix;
-
-    if (!args[0]) return message.channel.send(announceEmbed)
+    if (!args[0]) return message.channel.send(`Please use .report like this: ${prefix}report {@UserTag} {reason}.`)
 
     var user = message.guild.member(message.mentions.users.first());
 
-    if (!user) return message.channel.send("I can't find this person. Please try again later!");
+    if (!user) return message.channel.send("Speler is niet te vinden / geef een speler op.");
 
     var reason = args.join(" ").slice(22);
 
-    if (!reason) return message.channel.send("Please add a reason!")
+    if (!reason) return message.channel.send("Gelieve een reden op te geven.")
 
     var reportEmbed = new discord.RichEmbed()
         .setDescription("Reports")
@@ -34,7 +24,7 @@ module.exports.run = async(bot, message, args) => {
         .setFooter(message.createdAt);
 
     var channelReport = message.guild.channels.find("name", "report");
-    if (!channelReport) return message.channel.send("Kan het kanaal niet vinden");
+    if (!channelReport) return message.channel.send("Can't find channel");
 
     // ZORG VOOR ADMINISTRATOR RECHTEN OP BOT.
     message.delete();
