@@ -5,7 +5,7 @@ module.exports.run = async(bot, message, args) => {
 
 
 
-    if (!args[0]) return message.channel.send(`Please use .report like this: ${prefix}report {@UserTag} {reason}.`)
+    if (!args[0]) return message.channel.send(`Please use .report like this: .report {@UserTag} {reason}.`)
 
     var user = message.guild.member(message.mentions.users.first());
 
