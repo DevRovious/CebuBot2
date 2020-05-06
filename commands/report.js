@@ -15,7 +15,7 @@ module.exports.run = async(bot, message, args) => {
 
     if (!reason) return message.channel.send("Gelieve een reden op te geven.")
 
-    var reportEmbed = new discord.RichEmbed()
+    var reportEmbed = new discord.richEmbed()
         .setDescription("Reports")
         .setColor("00ff26")
         .addField("Reported user", `${user} with ID ${user.id}`)
