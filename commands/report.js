@@ -6,7 +6,7 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`.aboout`)
+        .setTitle(`.report`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
         .setDescription(`**This funtion is under development!**`);
