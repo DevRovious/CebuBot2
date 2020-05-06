@@ -6,16 +6,18 @@ module.exports.run = async(bot, message, args) => {
 
     message.delete();
 
-    var icon = message.guild.iconURL;
-
-    var serverEmbed = new discord.RichEmbed()
-    .setDescription("Test")
-    .setColor("#00ff26")
-    .setThumbnail(icon)
-    .addField("From * to *")
-    .addField("Time *");
-    return message.channel.send(serverEmbed)
-    
+    // Make an embed
+    var announceEmbed = new discord.MessageEmbed()
+        .setTitle(`📢 ${message.guild.name} | **Flight Announcement** 📢`)
+        .setFooter(`Sendend by ${message.author.tag}`)
+        .setColor("00ff26")
+        .setTimestamp()
+        .setDescription("Flight *Number*");
+        addField(" Time: *time*")
+        
+ 
+    // Send the embed to the current channel
+    var embedSend = await message.channel.send(announceEmbed);
     return;
 }
 
