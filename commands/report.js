@@ -10,10 +10,9 @@ module.exports.run = async(bot, message, args) => {
         //.setThumbnail(boticon)
         .setColor("00ff26")
         .setDescription(`**Please use .report {@Username} {Reason}!`);
-        
-        await await await message.channel.send("This is currently in development!")
     // Send the embed to the current channel
-    var embedSend = await message.channel.send(announceEmbed);
+    var embedSend = message.channel.send(announceEmbed);
+    await message.channel.send("This is currently in development!");
     return;
 
 }
