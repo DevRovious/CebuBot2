@@ -6,7 +6,7 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`You used the command: .twitter`)
+        .setTitle(`Giveaway Winner!`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
         .setDescription(`https://twitter.com/rbxcebupacific/status/1258797204363530251`);
