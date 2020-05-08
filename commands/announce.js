@@ -8,7 +8,7 @@ module.exports.run = async(client, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`:cebulogo: Cebu Pacific Roblox | Flight`)
+        .setTitle(`:cebulogo Cebu Pacific Roblox | Flight`)
         .setFooter(`Sendend by ${message.author.tag}`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
