@@ -9,7 +9,7 @@ module.exports.run = async(bot, message, args) => {
         .setTitle(`You used the command: .twitter`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
-        .setDescription(`**This funtion is under development!**`);
+        .setDescription(`https://twitter.com/rbxcebupacific/status/1258797204363530251`);
         
  
     // Send the embed to the current channel
