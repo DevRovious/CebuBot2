@@ -6,10 +6,10 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`You used the command: .preflix`)
+        .setTitle(`You used the command: .prefix`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
-        .setDescription(`Preflix is: **.**`);
+        .setDescription(`Prefix is: **.**`);
         
  
     // Send the embed to the current channel
@@ -20,7 +20,7 @@ module.exports.run = async(bot, message, args) => {
 
 
 module.exports.help = {
-    name: "preflix"
+    name: "prefix"
 }
 
 
