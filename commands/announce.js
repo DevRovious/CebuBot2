@@ -13,7 +13,7 @@ module.exports.run = async(client, message, args) => {
         //.setThumbnail(boticon)
         .setColor("00ff26")
         .setTimestamp()
-        .setDescription(`**Flight:** *001* \n**Plane:**  *A320* \n \n **Host:** *${message.author.tag}* \n \n \n **Times:** \n *Serveropentime:* \n *serverclosetime:* \n *boardingtime:* \n \n **Link: ** \n https://www.roblox.com/games/4781767558/Virac-Airport`);
+        .setDescription(`**Flight:** *001* \n**Aircraft:**  *A320* \n \n **Host:** *${message.author.tag}* \n \n \n **Times:** \n *Serveropentime:* \n *serverclosetime:* \n *boardingtime:* \n \n **Link: **https://www.roblox.com/games/4781767558/Virac-Airport`);
         
  
     // Send the embed to the current channel
