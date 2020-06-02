@@ -6,10 +6,10 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`About:`)
+        .setTitle(`Applications Hub:`)
         //.setThumbnail(boticon)
         .setColor("1a4ebd")
-        .setDescription(`**About:** \n\n Info: \n Welcome to the *About* from ${bot.name}. \n\n Time created: \n *- 3-5-2020 18:55 CET*. \n\n reator: \n *- DevRovious*`);
+        .setDescription(`**https://www.roblox.com/games/5126107873/British-Airways-Low-Ranks-Applications`);
         
  
     // Send the embed to the current channel
@@ -19,5 +19,5 @@ module.exports.run = async(bot, message, args) => {
 
 
 module.exports.help = {
-    name: "about"
+    name: "application"
 }
