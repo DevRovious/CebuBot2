@@ -8,7 +8,7 @@ module.exports.run = async(bot, message, args) => {
         .setTitle(`Commands:`)
         //.setThumbnail(boticon)
         .setColor("1a4ebd")
-        .setDescription(`**Following commands are:** \n\n - applicationGC (coming soon) \n - applicationCC (coming soon) \n - applicationFO (coming soon) \n - applicationC (coming soon)`);
+        .setDescription(`**Following commands are:** \n\n -applications \n -updates \n -commands`);
         
         var embedSend = await message.channel.send(announceEmbed);
         return;
