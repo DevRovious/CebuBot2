@@ -3,12 +3,10 @@ const discord = require("discord.js");
 module.exports.run = async(client, message, args) => {
 
 
-
-    message.delete();
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`Cebu Pacific Roblox | Flight`)
+        .setTitle(`Britisch Airways Roblox | Flight`)
         .setFooter(`Sendend by ${message.author.tag}`)
         //.setThumbnail(boticon)
         .setColor("00ff26")
