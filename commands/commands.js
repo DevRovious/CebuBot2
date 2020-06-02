@@ -5,10 +5,10 @@ module.exports.run = async(bot, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`Commands`)
+        .setTitle(`Commands:`)
         //.setThumbnail(boticon)
         .setColor("1a4ebd")
-        .setDescription(`**Following commands are:** \n\n - applicationGC \n - applicationCC \n - applicationFO \n - applicationC`);
+        .setDescription(`**Following commands are:** \n\n - applicationGC (coming soon) \n - applicationCC (coming soon) \n - applicationFO (coming soon) \n - applicationC (coming soon)`);
         
         var embedSend = await message.channel.send(announceEmbed);
         return;
