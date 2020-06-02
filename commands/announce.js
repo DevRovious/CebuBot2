@@ -6,12 +6,12 @@ module.exports.run = async(client, message, args) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`Britisch Airways Roblox | Flight`)
+        .setTitle(`Britisch Airways Roblox | Announcement`)
         .setFooter(`Sendend by ${message.author.tag}`)
-        //.setThumbnail(boticon)
+        .setThumbnail(boticon)
         .setColor("1a4ebd")
         .setTimestamp()
-        .setDescription(`**Flight:** *001* \n**Aircraft:**  *A320* \n \n**Host:** *${message.author.tag}* \n \n \n**Times:** \n*Serveropentime:* \n*serverclosetime:* \n*boardingtime:* \n \n**Link: **https://www.roblox.com/games/4781767558/Virac-Airport`);
+        .setDescription(`**Test`);
         
  
     // Send the embed to the current channel
