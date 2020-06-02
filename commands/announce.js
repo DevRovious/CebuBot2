@@ -11,7 +11,7 @@ module.exports.run = async(client, message, args) => {
         //.setThumbnail(boticon)
         .setColor("1a4ebd")
         .setTimestamp()
-        .setDescription(`**Test`);
+        .setDescription(`**UPDATES:** \n \n - Self Check In \n - New In Flight Entertrainment \n - More coming soon!`);
         
  
     // Send the embed to the current channel
