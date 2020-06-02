@@ -37,7 +37,7 @@ client.on("ready", async () => {
 
     console.log(`${client.user.username} is online and working.`);
 
-    client.user.setActivity("Watching Cebu Pacific Roblox Discord Server!", { type: "PLAYING" });
+    client.user.setActivity("This bot is made by: DevRovious!", { type: "PLAYING" });
 
 });
 
