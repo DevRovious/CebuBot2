@@ -8,7 +8,7 @@ module.exports.run = async(bot, message, args) => {
         .setTitle(`Applications:`)
         //.setThumbnail(boticon)
         .setColor("1a4ebd")
-        .setDescription(`https://www.roblox.com/games/5126107873/British-Airways-Low-Ranks-Applications`);
+        .setDescription(`https://www.roblox.com/games/5126107873`);
         
         var embedSend = await message.channel.send(announceEmbed);
         return;
@@ -17,5 +17,5 @@ module.exports.run = async(bot, message, args) => {
 
 
 module.exports.help = {
-    name: "-applications"
+    name: "applications"
 }
