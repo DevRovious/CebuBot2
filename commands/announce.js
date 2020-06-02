@@ -8,7 +8,7 @@ module.exports.run = async(client, message, args) => {
     var announceEmbed = new discord.MessageEmbed()
         .setTitle(`Britisch Airways Roblox | Announcement`)
         .setFooter(`Sendend by ${message.author.tag}`)
-        .setThumbnail(boticon)
+        //.setThumbnail(boticon)
         .setColor("1a4ebd")
         .setTimestamp()
         .setDescription(`**Test`);
