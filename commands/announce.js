@@ -9,7 +9,7 @@ module.exports.run = async(client, message, args) => {
         .setTitle(`Britisch Airways Roblox | Flight`)
         .setFooter(`Sendend by ${message.author.tag}`)
         //.setThumbnail(boticon)
-        .setColor("00ff26")
+        .setColor("1a4ebd")
         .setTimestamp()
         .setDescription(`**Flight:** *001* \n**Aircraft:**  *A320* \n \n**Host:** *${message.author.tag}* \n \n \n**Times:** \n*Serveropentime:* \n*serverclosetime:* \n*boardingtime:* \n \n**Link: **https://www.roblox.com/games/4781767558/Virac-Airport`);
         

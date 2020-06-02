@@ -7,7 +7,7 @@ module.exports.run = async(bot, message, args) => {
     var announceEmbed = new discord.MessageEmbed()
         .setTitle(`Commands`)
         //.setThumbnail(boticon)
-        .setColor("00ff26")
+        .setColor("1a4ebd")
         .setDescription(`**Following commands are:** \n\n - Coming soon!`);
         
         var embedSend = await message.channel.send(announceEmbed);

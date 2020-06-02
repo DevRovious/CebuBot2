@@ -8,7 +8,7 @@ module.exports.run = async(bot, message, args) => {
     var announceEmbed = new discord.MessageEmbed()
         .setTitle(`About`)
         //.setThumbnail(boticon)
-        .setColor("00ff26")
+        .setColor("1a4ebd")
         .setDescription(`**About:** \n\n Info: \n Welcome to the *About* from ${bot.name}. \n\n Time created: \n *- 3-5-2020 18:55 CET*. \n\n reator: \n *- DevRovious*`);
         
  
