@@ -12,6 +12,7 @@ module.exports.run = async(client, message, args, boticon) => {
         .setColor("1a4ebd")
         .setTimestamp()
         .setDescription(`**UPDATES:** \n \n - Self Check In! \n - New In Flight Entertrainment! \n -  And More! \n`);
+        .setImage('https://www.hairfair.nl/media/blog/test-.jpg')
         
  
     // Send the embed to the current channel
