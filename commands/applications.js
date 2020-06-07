@@ -1,21 +1,26 @@
 const discord = require("discord.js");
 
-module.exports.run = async(bot, message, args) => {
+module.exports.run = async(client, message, args, boticon) => {
 
+    message.delete();
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`Applications:`)
-        //.setThumbnail(boticon)
+        .setTitle(`Britisch Airways Roblox | Announcements`)
+        .setFooter(`Sendend by ${message.author.tag}`)
+        .setThumbnail(boticon)
         .setColor("1a4ebd")
-        .setDescription(`Greetings! This application is designed to assess the knowledge, responsibilities, and duties you hold to potentially become a staff member here at British Airways. Here at British Airways, our staff play an integral part in our glorious Airline. Staff play a vital role in the development and enrichment of our Airline, Hence, the maturity, discipline and development of trainees is of paramount importance to our High Ranking Staff. \n \n https://docs.google.com/forms/d/1F2Xd18xe1p3XSzjONAV_amKSLZk1o44gp4Pl37CNEqg/edit`);
+        .setTimestamp()
+        .setDescription(`We are currently trying to fix the airport Glasgow. We hope our next flight there will become history. \n \n Signed by: \n DevRovious `)
+        .setImage('https://cdn.discordapp.com/attachments/690504401017634827/719132286997626960/britishairways_800x350_web.jpg');
         
-        var embedSend = await message.channel.send(announceEmbed);
-        return;
-
+ 
+    // Send the embed to the current channel
+    var embedSend = await message.channel.send(announceEmbed);
+    return;
 }
 
 
 module.exports.help = {
-    name: "applications"
+    name: "Flight"
 }
