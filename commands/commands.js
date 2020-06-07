@@ -6,14 +6,14 @@ module.exports.run = async (client, message, args) => {
 
     if(!message.member.hadPermission("KICK_MEMBERS")) return message.reply("Sorry jij kan dit niet");
 
-    var sperator = "!";
+    var Seperator = "!";
 
     if(args[0] == null){
 
         var embed = new.discord.MessageEmbed()
         .setTitle("Gebruik")
         .setColor("#00ee00")
-        .setDescription(`Maak een announcement door gebruik te maken van: \n !announcement titel ${seperator} bericht ${seperator} kleur ${seperator} kanaal`);
+        .setDescription(`Maak een announcement door gebruik te maken van: \n !announcement titel ${Seperator} bericht ${Seperator} kleur ${Seperator} kanaal`);
 
     return message.reply(embed);
 
