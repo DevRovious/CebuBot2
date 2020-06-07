@@ -12,7 +12,8 @@ module.exports.run = async(client, message, args, boticon) => {
         .setColor("1a4ebd")
         .setTimestamp()
         .setDescription(`**UPDATES:** \n \n - Self Check In! \n - New In Flight Entertrainment! \n -  And More! \n`)
-        .setImage('https://www.hairfair.nl/media/blog/test-.jpg');
+        .setImage('https://media.discordapp.net/attachments/719211340572393523/719212400020160562/8Hib2HM0RtCdQAAAAASUVORK5CYII.png')
+        .addField("Test");
         
  
     // Send the embed to the current channel
