@@ -11,7 +11,7 @@ module.exports.run = async(client, message, args, boticon) => {
         .setThumbnail(boticon)
         .setColor("1a4ebd")
         .setTimestamp()
-        .setDescription(`\n Flight Code: BA 0002 \n Date: \n Staff Join: \n Unslock: \n Airport: \n Aircraft: \n \n \n **Management Roles** \n Host: <@719140329604907039> \n Co-Host: \n Supervisor: \n \n \n **Terminal** \n Check-In/Duty Free: \n \n \n **Flight Deck** \n Captain: \n Backup: \n First Officer: \n Backup: \n \n \n **Cabin Staff** \n Purser (SS+): \n Cabin Crew: \n \n \n **Lounge** \n Gate Desk: \n \n \n **Landside Team** \n Tarmac Supervisor (SS+): \n Landside: `)
+        .setDescription(`\n Flight Code: BA 0002 \n Date: \n Staff Join: \n Unslock: \n Airport: \n Aircraft: \n \n \n **Management Roles** \n Host: <@476112184372363285> \n Co-Host: \n Supervisor: \n \n \n **Terminal** \n Check-In/Duty Free: \n \n \n **Flight Deck** \n Captain: \n Backup: \n First Officer: \n Backup: \n \n \n **Cabin Staff** \n Purser (SS+): \n Cabin Crew: \n \n \n **Lounge** \n Gate Desk: \n \n \n **Landside Team** \n Tarmac Supervisor (SS+): \n Landside: `)
         .setImage('');
         
  
