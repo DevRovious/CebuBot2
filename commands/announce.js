@@ -6,12 +6,12 @@ module.exports.run = async(client, message, args, boticon) => {
     var icon = message.guild.iconURL;
     // Make an embed
     var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`Britisch Airways Roblox | Developments`)
+        .setTitle(`Britisch Airways Roblox | Announcements`)
         .setFooter(`Sendend by ${message.author.tag}`)
         .setThumbnail(boticon)
         .setColor("1a4ebd")
         .setTimestamp()
-        .setDescription(`**Announcements:** \n \n We are currently trying to fix the airport Glasgow. We hope our next flight there will become history. \n \n Signed by: \n DevRovious `)
+        .setDescription(`We are currently trying to fix the airport Glasgow. We hope our next flight there will become history. \n \n Signed by: \n DevRovious `)
         .setImage('https://cdn.discordapp.com/attachments/690504401017634827/719132286997626960/britishairways_800x350_web.jpg');
         
  
