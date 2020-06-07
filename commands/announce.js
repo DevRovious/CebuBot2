@@ -11,8 +11,8 @@ module.exports.run = async(client, message, args, boticon) => {
         .setThumbnail(boticon)
         .setColor("1a4ebd")
         .setTimestamp()
-        .setDescription(`**UPDATES:** \n \n - Self Check In! \n - New In Flight Entertrainment! \n -  And More! \n`)
-        .setImage('https://i.gyazo.com/79fbd171b18a4196c10b9dc2cc85b382.mp4');
+        .setDescription(`**Announcements:** \n \n We are currently trying to fix the airport Glasgow. We hope our next flight there will become history. \n \n Signed by: \n DevRovious `)
+        .setImage('https://cdn.discordapp.com/attachments/690504401017634827/719132286997626960/britishairways_800x350_web.jpg');
         
  
     // Send the embed to the current channel
