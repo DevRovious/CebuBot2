@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
 
     var Seperator = "!";
 
-    if(args[0] == null){
+    if (!args[0] === titel) {
 
         var embed = new.discord.MessageEmbed()
         .setTitle("Gebruik")
