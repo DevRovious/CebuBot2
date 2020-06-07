@@ -8,7 +8,7 @@ module.exports.run = async(client, message, args, boticon) => {
     var announceEmbed = new discord.MessageEmbed()
         .setTitle(`Britisch Airways Roblox | Announcements`)
         .setFooter(`Sendend by ${message.author.tag}`)
-        .setThumbnail(boticon)
+        .setThumbnail(message.author.displayAvatarURL())
         .setColor("1a4ebd")
         .setTimestamp()
         .setDescription(`We are currently trying to fix the airport Glasgow. We hope our next flight there will become history. \n \n Signed by: \n DevRovious `)
