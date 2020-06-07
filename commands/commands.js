@@ -1,63 +1,24 @@
-const discord = require('discord.js');
+const discord = require("discord.js");
 
-module.exports.run = async (bot, message, args) => {
+module.exports.run = async (client, message, args) => {
 
-    // !announcement Titel ${splitser} Bericht ${splitser} Kleur ${splitser} Kanaal
+    // !announcement title | bericht | kleur | kanaal
 
-    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Sorry jij kan dit niet doen");
+    if(!message.member.hadPermission("KICK_MEMBERS")) return message.reply("Sorry jij kan dit niet")
 
-    // Met dit gaan we tekst splitsen.
-    var splitser = "//";
+    var sperator = "!";
 
-    // Nakijken als men wel gegevens meegeeft.
-    if (args[0] == null) {
+    if(args[0] == null){
 
-        var useMessage = new discord.RichEmbed()
-            .setTitle("Gebruik")
-            .setColor("#00ee00")
-            .setDescription(`Maak een announcement door gebruik te maken van: \n !announcement Titel ${splitser} Bericht ${splitser} Kleur ${splitser} Kanaal`);
+        var embed = new.discord.MessageEmbed()
+        .setTitle("Gebruik")
+        .setColor("#00ee00")
+        .setDescription(`Maak een announcement door gebruik te maken van: \n !announcement titel ${seperator} bericht ${seperator} kleur ${seperator} kanaal`);
 
-        return message.channel.send(useMessage);
+    return message.reply(embed);
 
     }
-
-    // Verkrijg al de args en splits ze met de splitser.
-    args = args.join(" ").split(splitser);
-
-    // Nakijken als je channel meegeeft of een kleur. Dit plaatsen we hier om een error te voorkomen bij de trim later.
-    if (args[2] == undefined) args[2] = "#eeeeee";
-    if (args[3] == undefined) args[3] = "general";
-
-    // Opties die gezet worden als er iets niet wordt meegeven.
-    // Voor het kanaal halen we de spaties weg.
-    var options = {
-
-        titel: args[0] || "Melding",
-        bericht: args[1] || "Geen inhoud opgegeven",
-        kleur: args[2].trim(),
-        kanaal: args[3].trim()
-
-    }
-
-    // Verkrijgen van wie het bericht aanmaakt.
-    var announcer = message.author;
-
-    // Het bericht wat wordt verzonden.
-    var announcementMessage = new discord.RichEmbed()
-        .setTitle("Announcement:")
-        .setColor(options.kleur)
-        .setDescription(`Bericht van ${announcer} \n\n ${options.titel} \n\n ${options.bericht} \n`)
-        .setTimestamp();
-
-    // Kanaal krijgen waar het verzonden moet worden.
-    var announceChannel = message.guild.channels.find(`name`, options.kanaal);
-    if (!announceChannel) return message.channel.send("Kan het kanaal niet vinden");
-
-    // Zenden van het bericht.
-    announceChannel.send(announcementMessage);
-
 }
 
 module.exports.help = {
     name: "announcement"
-}
