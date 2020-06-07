@@ -11,7 +11,7 @@ module.exports.run = async(client, message, args, boticon) => {
         .setThumbnail(boticon)
         .setColor("1a4ebd")
         .setTimestamp()
-        .setDescription(`We are currently trying to fix the airport Glasgow. We hope our next flight there will become history. \n \n Signed by: \n DevRovious `)
+        .setDescription(`Flight Code: BA 0002 \n Date: \n Staff Join: \n Unslock: \n Airport: \n Aircraft: \n \n \n **Management Roles** \n Host: \n Co-Host: \n Supervisor: \n `)
         .setImage('https://cdn.discordapp.com/attachments/690504401017634827/719132286997626960/britishairways_800x350_web.jpg');
         
  
