@@ -4,7 +4,7 @@ module.exports.run = async (client, message, args) => {
 
     // !announcement title | bericht | kleur | kanaal
 
-    if(!message.member.hadPermission("KICK_MEMBERS")) return message.reply("Sorry jij kan dit niet")
+    if(!message.member.hadPermission("KICK_MEMBERS")) return message.reply("Sorry jij kan dit niet");
 
     var sperator = "!";
 
