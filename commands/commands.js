@@ -1,20 +1,25 @@
 const discord = require("discord.js");
 
-module.exports.run = async(bot, message, args) => {
+module.exports.run = async (client, message, args) => {
 
-    var icon = message.guild.iconURL;
-    // Make an embed
-    var announceEmbed = new discord.MessageEmbed()
-        .setTitle(`Commands:`)
-        //.setThumbnail(boticon)
-        .setColor("1a4ebd")
-        .setDescription(`**Following commands are:** \n\n -applications \n -updates \n -commands`);
-        
-        var embedSend = await message.channel.send(announceEmbed);
-        return;
+    // !announcement title | bericht | kleur | kanaal
 
+    if(!message.member.hadPermission("KICK_MEMBERS")) return message.reply("Sorry jij kan dit niet");
+
+    var Seperator = "!";
+
+    if (!args[0] === titel) {
+
+        var embed = new.discord.MessageEmbed()
+        .setTitle("Gebruik")
+        .setColor("#00ee00")
+        .setDescription(`Maak een announcement door gebruik te maken van: \n !announcement titel ${Seperator} bericht ${Seperator} kleur ${Seperator} kanaal`);
+
+    return message.reply(embed);
+
+    }
 }
 
 module.exports.help = {
-    name: "commands"
+    name: "announcement"
 }
